@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 376px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.containerImageAndName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagePhoto {
+  margin-top: 24px;
+  border-radius: 100%;
+  max-width: 175px;
+  background-color: black;
+}
+
+.userName {
+  margin: 16px auto;
+  font-size: 32px;
+  color: black;
+  font-weight: 700;
+}
+
+.userTag {
+  margin: 0;
+  font-size: 24px;
+  color: darkgray;
+  font-weight: 500;
+}
+
+.userLocation {
+  margin: 8px 0 0 0;
+  font-size: 24px;
+  color: darkgray;
+  font-weight: 500;
+}
+
+.userDataList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-decoration: none;
+  padding-left: 0;
+  margin: 16px 0 0 0;
+}
+
+.userDataItem {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  padding: 4px;
+  border: 1.5px solid rgb(68, 68, 68);
+  background-color: rgb(188, 183, 183);
+  width: 100%;
+}
+
+.userDataItem:nth-last-child(1) {
+  border-bottom-right-radius: 17px;
+}
+
+.userDataItem:nth-last-child(3) {
+  border-bottom-left-radius: 17px;
+}
+
+.accentSpan {
+  font-weight: 700;
+}

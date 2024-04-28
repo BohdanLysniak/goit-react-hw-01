@@ -1,27 +1,28 @@
-export default function Profile({
-  userInfo: { name, tag, location, avatar, stats },
-}) {
+import clsx from 'clsx';
+import css from './Profile.module.css';
+
+export default function Profile({ name, tag, location, image, stats }) {
   return (
-    <div>
-      <div>
-        <img src={avatar} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={clsx(css.container)}>
+      <div className={clsx(css.containerImageAndName)}>
+        <img className={clsx(css.imagePhoto)} src={image} alt="User avatar" />
+        <p className={clsx(css.userName)}>{name}</p>
+        <p className={clsx(css.userTag)}>@{tag}</p>
+        <p className={clsx(css.userLocation)}>{location}</p>
       </div>
 
-      <ul>
-        <li>
+      <ul className={clsx(css.userDataList)}>
+        <li className={clsx(css.userDataItem)}>
           <span>Followers</span>
-          <span>{stats.followers}</span>
+          <span className={clsx(css.accentSpan)}>{stats.followers}</span>
         </li>
-        <li>
+        <li className={clsx(css.userDataItem)}>
           <span>Views</span>
-          <span>{stats.views}</span>
+          <span className={clsx(css.accentSpan)}>{stats.views}</span>
         </li>
-        <li>
+        <li className={clsx(css.userDataItem)}>
           <span>Likes</span>
-          <span>{stats.likes}</span>
+          <span className={clsx(css.accentSpan)}>{stats.likes}</span>
         </li>
       </ul>
     </div>
