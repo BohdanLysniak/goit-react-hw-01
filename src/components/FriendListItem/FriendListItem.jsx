@@ -5,7 +5,7 @@ export default function FriendListItem({
   friends: { avatar, name, isOnline }
 }) {
   return (
-    <div>
+    <div className={clsx(css.wrapperItem)}>
       <img src={avatar} alt="Avatar" width="48" />
       <p>{name}</p>
       <p
