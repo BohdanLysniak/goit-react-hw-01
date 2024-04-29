@@ -1,9 +1,7 @@
 import clsx from "clsx";
 import css from "../FriendListItem/FriendListItem.module.css";
 
-export default function FriendListItem({
-  friends: { avatar, name, isOnline }
-}) {
+export default function FriendListItem({ friend: { avatar, name, isOnline } }) {
   return (
     <div className={clsx(css.wrapperItem)}>
       <img

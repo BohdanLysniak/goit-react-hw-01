@@ -7,7 +7,7 @@ export default function FriendList({ friends }) {
     <ul className={clsx(css.friendList)}>
       {friends.map(friend => (
         <li className={clsx(css.friendItem)} key={friend.id}>
-          <FriendListItem friends={friend} />
+          <FriendListItem friend={friend} />
         </li>
       ))}
     </ul>
