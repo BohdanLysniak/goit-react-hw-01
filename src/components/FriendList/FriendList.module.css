@@ -9,3 +9,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.friendItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}

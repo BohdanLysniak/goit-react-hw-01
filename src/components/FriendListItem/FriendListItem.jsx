@@ -6,8 +6,13 @@ export default function FriendListItem({
 }) {
   return (
     <div className={clsx(css.wrapperItem)}>
-      <img src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
+      <img
+        className={clsx(css.userImage)}
+        src={avatar}
+        alt="Avatar"
+        width="48"
+      />
+      <p className={clsx(css.userName)}>{name}</p>
       <p
         className={clsx(
           css.textStatus,
