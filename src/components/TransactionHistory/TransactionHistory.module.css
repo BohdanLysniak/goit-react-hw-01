@@ -1,0 +1,45 @@
+.transactionTable {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 376px;
+  text-align: center;
+}
+
+.tableLine {
+  background-color: black;
+  color: white;
+  padding: 6px 0;
+  border: 1px solid black;
+}
+
+.lineitem {
+  padding: 4px 0;
+  border: 1px solid black;
+  text-transform: capitalize;
+}
+
+.line {
+  border: 1px solid black;
+}
+
+.line:nth-child(even) {
+  background-color: #bababa;
+}
+
+.tableHead {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.type {
+}
+
+.amount {
+}
+
+.currency {
+}
